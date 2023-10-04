@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <MAIN class="conteudoPrincipal" id="principal">
+        <div class="nav"></div>
+
+        <section class="container" id="principal2">
+
+            <div class="containerH1" id="h1">
+                <h1>calculadora IMC</h1>
+                <IMg class="img" src="IMG/IMG.PNG"></IMg>
+                
+            </div>
+
+
+            <div class="form-grup">
+                <label for="nome">nome</label>
+                <input 
+                type="text" 
+                class="input"
+                 id="nome" 
+                 placeholder="nome...">
+            </div>
+
+            <div class="form-grup" >
+                <label for="idade"> idade</label>
+                <input type="number" placeholder="idade..." min="1" max="130" class="input" id="idade">
+            </div>
+            <div class="form-grup" >
+                <label for="peso">peso</label>
+                <input type="number" min="0.0" max="500.0" class="input" placeholder="peso" id="peso">
+            </div>
+            <div class="form-grup" >
+                <label for="altura">altura</label>
+                <input type="number"  class="input" name="altura" id="altura" placeholder="altura">
+            </div>
+
+            <div class="form-grup" >
+                <label for="imc">IMC</label>
+                <input type="number" name="imc" min="0.0" max="500.00" class="input" id="imc" value="0.0" disabled>
+            </div>
+
+            <div  class="botoes">
+                <button id="botao1" type="submit">calcular</button>
+                <button id="botao2" type="reset">limpar</button>
+            </div>
+            <div>
+               <span id="aviso"></span>
+            </div>
+
+            <div id="resultado">
+             <h2 id="id" class="pessoa">imc</h2>
+             <p id="nome" class="pessoa"></p>
+             <p id="idade" class="pessoa"></p>
+             <p id="peso" class="pessoa"></p>
+             <p id="altura" class="pessoa"></p>
+             <p id="imc" class="pessoa"></p>
+
+             
+             
+            </div>
+            
+            <div class="rodape" id="pé"> by @Richardalexandreeee</div>
+        </section>
+
+       
+    </MAIN>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
